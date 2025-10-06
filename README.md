@@ -20,6 +20,6 @@ P = Error * Kp
 - error : sensor value - setpoint
 - Kp : proportional gain
 
-Characteristics
+Characteristics.  
 - Fast respons
 - Simple implementation 
