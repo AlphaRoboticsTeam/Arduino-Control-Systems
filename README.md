@@ -16,4 +16,8 @@
 ## 1. P Controller (Proportional Control)
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 P = Error * Kp
-- error = sensor value - setpoint
+- error : sensor value - setpoint
+- Kp : proportional gain
+Characteristics
+- Fast respons
+- Simple implementation 
