@@ -23,3 +23,4 @@ P = Error * Kp
 Characteristics.  
 - Fast respons
 - Simple implementation  
+![Function code](https://github.com/AlphaRoboticsTeam/AlphaLibrary/blob/main/photo/board.png) 
