@@ -22,4 +22,4 @@ P = Error * Kp
 
 Characteristics.  
 - Fast respons
-- Simple implementation 
+- Simple implementation  
