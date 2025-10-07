@@ -26,11 +26,10 @@ Characteristics.
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
 
 ## 2. PI Controller (Proportional+Integral Control)
-the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
+the Pi controls adds an integral term to remove the steady state error by accumulating past errors.  
 
-P = Error * Kp
-- error : sensor value - setpoint
-- Kp : proportional gain
+PI = (Kp*Error)+(Ki*sum(error*dt))
+- Ki : integral gain (eliminates persistent offset)
 
 Characteristics.  
 - Fast respons
