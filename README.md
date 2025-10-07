@@ -56,9 +56,10 @@ Characteristics.
 - Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
 ---
-## 3. PD Controller (Proportional+Derivative Control)
+## 3. PID Controller (Proportional+Derivative Control)
 ### 🧠Description
-the PD controllers prediccts future error by considering the **rate of charg** of the error.   
+the PID controllers combines the proportional,integral and derivative terms.  
+it is most widely used control algorithm in **industry and robotics**.
 
 **Formula :**  
 PD = (Kp*Error)+(Kd*(de(t)/dt)
