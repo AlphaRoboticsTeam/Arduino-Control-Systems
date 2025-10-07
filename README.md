@@ -19,7 +19,8 @@ the proportional controller produces an output that is directly proportional to 
 **Formula**  
 P = Error * Kp
 - error : sensor value - setpoint
-- Kp : proportional gain  
+- Kp : proportional gain
+
 Characteristics.  
 - Fast respons
 - Simple implementation  
