@@ -25,7 +25,7 @@ Characteristics.
 - Simple implementation  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
 
-## 2. P Controller (Proportional Control)
+## 2. PI Controller (Proportional+Integral Control)
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 
 P = Error * Kp
@@ -35,4 +35,4 @@ P = Error * Kp
 Characteristics.  
 - Fast respons
 - Simple implementation  
-![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
+![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png) 
