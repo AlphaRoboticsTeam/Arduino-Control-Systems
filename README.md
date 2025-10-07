@@ -24,7 +24,7 @@ P = Error * Kp
 the Pi controls adds an integral term to remove the steady state error by accumulating past errors.  
 
 ### Formula:  
-PI = (Kp*Error)+(Ki*sum(error*dt))
+PI = (Kp*Error)+(Ki*sum(error)*dt
 - Ki : integral gain (eliminates persistent offset)
 
 ### Characteristics.  
