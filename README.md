@@ -23,7 +23,7 @@ P = Error * Kp
 
 Characteristics.  
 - Fast respons
-- Simple implementation  
+- Simple implementation.   
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
 
 ## 2. PI Controller (Proportional+Integral Control)
@@ -36,5 +36,5 @@ PI = (Kp*Error)+(Ki*sum(error*dt))
 Characteristics.  
 - Zero steady-state error 
 - Smoother oytput than p
-- Slow reaction due to the integral term 
+- Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png) 
