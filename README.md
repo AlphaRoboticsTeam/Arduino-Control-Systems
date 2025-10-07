@@ -4,15 +4,7 @@
 - PI (Proportional-Integral)
 - PD (Proportional-Derivative)
 - PID (Proportional-Integral-Derivative)
-
-## ⚖️ Comparison of Controller Advantages and Disadvantages
-| Controller | Advantages | Disadvantages |
-|-------------|-------------|----------------|
-| P (Proportional) | ⚡ Simple and easy to implement<br>⚙️ Fast response to changes<br>🧩 Requires minimal tuning | ❌ Cannot eliminate steady-state error<br>📉 May cause oscillation or overshoot<br>🔊 Sensitive to system gain variations |
-| PI (Proportional + Integral) | ✅ Eliminates steady-state error<br>🔄 Smooth and stable output<br>📈 Improves accuracy for constant disturbances | 🐢 Slower response than P<br>⚠️ May introduce overshoot<br>🧮 Integral term can cause “windup” if not limited |
-| PD (Proportional + Derivative) | 🚀 Faster and more stable than P<br>🧠 Predicts future error trends<br>📉 Reduces overshoot effectively | ❌ Does not eliminate steady-state error<br>🔊 Very sensitive to measurement noise<br>⚙️ Requires careful tuning of Kd |
-| PID (Proportional + Integral + Derivative)* | 🌟 Combines all benefits: fast, accurate, stable<br>🎯 Eliminates steady-state error<br>⚙️ Excellent for most control systems | ⚠️ Harder to tune (3 parameters)<br>💻 Computationally more demanding<br>🧩 Over-tuning can cause instability |
-
+---
 ## 1. P Controller (Proportional Control)
 ### 🧠Description
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
@@ -62,16 +54,23 @@ the PID controllers combines the proportional,integral and derivative terms.
 it is most widely used control algorithm in **industry and robotics**.
 
 **Formula :**  
-PD = (Kp*Error)+(Kd*(de(t)/dt)
+PID = (Kp*Error)+(Ki*sum(error*dt))+(Kd*(de(t)/dt)
+- Kp : proportional gain
 - Ki : integral gain (eliminates persistent offset)
-
+- Kd : derivative gain (anticipates future behaviors)
 Characteristics.  
-- Zero steady-state error 
-- Smoother oytput than p
-- Slow reaction due to the integral term.  
-![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
-
-
+- Precise and stable
+- Handles disturbances effectively
+- Requires careful tuning of Kp,Ki and Kd  
+![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PID.png) 
+---
+## ⚖️ Comparison of Controller Advantages and Disadvantages
+| Controller | Advantages | Disadvantages |
+|-------------|-------------|----------------|
+| P (Proportional) | ⚡ Simple and easy to implement<br>⚙️ Fast response to changes<br>🧩 Requires minimal tuning | ❌ Cannot eliminate steady-state error<br>📉 May cause oscillation or overshoot<br>🔊 Sensitive to system gain variations |
+| PI (Proportional + Integral) | ✅ Eliminates steady-state error<br>🔄 Smooth and stable output<br>📈 Improves accuracy for constant disturbances | 🐢 Slower response than P<br>⚠️ May introduce overshoot<br>🧮 Integral term can cause “windup” if not limited |
+| PD (Proportional + Derivative) | 🚀 Faster and more stable than P<br>🧠 Predicts future error trends<br>📉 Reduces overshoot effectively | ❌ Does not eliminate steady-state error<br>🔊 Very sensitive to measurement noise<br>⚙️ Requires careful tuning of Kd |
+| PID (Proportional + Integral + Derivative)* | 🌟 Combines all benefits: fast, accurate, stable<br>🎯 Eliminates steady-state error<br>⚙️ Excellent for most control systems | ⚠️ Harder to tune (3 parameters)<br>💻 Computationally more demanding<br>🧩 Over-tuning can cause instability |
 
 
 
