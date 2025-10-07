@@ -26,8 +26,9 @@ Characteristics.
 - Fast respons
 - Simple implementation.   
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
-
+---
 ## 2. PI Controller (Proportional+Integral Control)
+### 🧠Description
 the Pi controls adds an integral term to remove the steady state error by accumulating past errors.  
 
 **Formula :**  
@@ -39,9 +40,10 @@ Characteristics.
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png)
-
+---
 
 ## 3. PD Controller (Proportional+Derivative Control)
+### 🧠Description
 the PD controllers prediccts future error by considering the **rate of charg** of the error.   
 
 **Formula :**  
@@ -53,8 +55,20 @@ Characteristics.
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
+---
+## 3. PD Controller (Proportional+Derivative Control)
+### 🧠Description
+the PD controllers prediccts future error by considering the **rate of charg** of the error.   
 
+**Formula :**  
+PD = (Kp*Error)+(Kd*(de(t)/dt)
+- Ki : integral gain (eliminates persistent offset)
 
+Characteristics.  
+- Zero steady-state error 
+- Smoother oytput than p
+- Slow reaction due to the integral term.  
+![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
 
 
 
