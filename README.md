@@ -57,7 +57,7 @@ it is most widely used control algorithm in **industry and robotics**.
 PID = (Kp*Error)+(Ki*sum(error*dt))+(Kd*(de(t)/dt)
 - Kp : proportional gain
 - Ki : integral gain (eliminates persistent offset)
-- Kd : derivative gain (anticipates future behaviors)
+- Kd : derivative gain (anticipates future behaviors)  
 Characteristics.  
 - Precise and stable
 - Handles disturbances effectively
