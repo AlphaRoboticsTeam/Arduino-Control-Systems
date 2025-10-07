@@ -9,7 +9,7 @@
 ### 🧠Description
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 
-**Formula :**  
+### Formula:  
 P = Error * Kp
 - error : sensor value - setpoint
 - Kp : proportional gain
@@ -23,7 +23,7 @@ P = Error * Kp
 ### 🧠Description
 the Pi controls adds an integral term to remove the steady state error by accumulating past errors.  
 
-**Formula :**  
+### Formula:  
 PI = (Kp*Error)+(Ki*sum(error*dt))
 - Ki : integral gain (eliminates persistent offset)
 
@@ -38,7 +38,7 @@ PI = (Kp*Error)+(Ki*sum(error*dt))
 ### 🧠Description
 the PD controllers prediccts future error by considering the **rate of charg** of the error.   
 
-**Formula :**  
+### Formula:  
 PD = (Kp*Error)+(Kd*(de(t)/dt)
 - Ki : integral gain (eliminates persistent offset)
 
@@ -53,7 +53,7 @@ PD = (Kp*Error)+(Kd*(de(t)/dt)
 the PID controllers combines the proportional,integral and derivative terms.  
 it is most widely used control algorithm in **industry and robotics**.
 
-**Formula :**  
+### Formula:  
 PID = (Kp*Error)+(Ki*sum(error*dt))+(Kd*(de(t)/dt)
 - Kp : proportional gain
 - Ki : integral gain (eliminates persistent offset)
