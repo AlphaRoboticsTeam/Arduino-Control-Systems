@@ -5,7 +5,7 @@
 - PD (Proportional-Derivative)
 - PID (Proportional-Integral-Derivative)
 ---
-## 1. P Controller (Proportional Control)
+## ⚙️1. P Controller (Proportional Control)
 ### 🧠Description
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 
@@ -19,7 +19,7 @@ Characteristics.
 - Simple implementation.   
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
 ---
-## 2. PI Controller (Proportional+Integral Control)
+## ⚙️2. PI Controller (Proportional+Integral Control)
 ### 🧠Description
 the Pi controls adds an integral term to remove the steady state error by accumulating past errors.  
 
@@ -34,7 +34,7 @@ Characteristics.
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png)
 ---
 
-## 3. PD Controller (Proportional+Derivative Control)
+## ⚙️3. PD Controller (Proportional+Derivative Control)
 ### 🧠Description
 the PD controllers prediccts future error by considering the **rate of charg** of the error.   
 
@@ -48,7 +48,7 @@ Characteristics.
 - Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
 ---
-## 3. PID Controller (Proportional+Derivative Control)
+## ⚙️4. PID Controller (Proportional+Derivative Control)
 ### 🧠Description
 the PID controllers combines the proportional,integral and derivative terms.  
 it is most widely used control algorithm in **industry and robotics**.
