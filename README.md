@@ -14,7 +14,7 @@ P = Error * Kp
 - error : sensor value - setpoint
 - Kp : proportional gain
 
-Characteristics.  
+### Characteristics.  
 - Fast respons
 - Simple implementation.   
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/P.png) 
@@ -27,7 +27,7 @@ the Pi controls adds an integral term to remove the steady state error by accumu
 PI = (Kp*Error)+(Ki*sum(error*dt))
 - Ki : integral gain (eliminates persistent offset)
 
-Characteristics.  
+### Characteristics.  
 - Zero steady-state error 
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
@@ -42,7 +42,7 @@ the PD controllers prediccts future error by considering the **rate of charg** o
 PD = (Kp*Error)+(Kd*(de(t)/dt)
 - Ki : integral gain (eliminates persistent offset)
 
-Characteristics.  
+### Characteristics.  
 - Zero steady-state error 
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
@@ -58,7 +58,7 @@ PID = (Kp*Error)+(Ki*sum(error*dt))+(Kd*(de(t)/dt)
 - Kp : proportional gain
 - Ki : integral gain (eliminates persistent offset)
 - Kd : derivative gain (anticipates future behaviors)  
-Characteristics.  
+### Characteristics.  
 - Precise and stable
 - Handles disturbances effectively
 - Requires careful tuning of Kp,Ki and Kd  
