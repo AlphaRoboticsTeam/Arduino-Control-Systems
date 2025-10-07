@@ -14,6 +14,7 @@
 | PID (Proportional + Integral + Derivative)* | 🌟 Combines all benefits: fast, accurate, stable<br>🎯 Eliminates steady-state error<br>⚙️ Excellent for most control systems | ⚠️ Harder to tune (3 parameters)<br>💻 Computationally more demanding<br>🧩 Over-tuning can cause instability |
 
 ## 1. P Controller (Proportional Control)
+###🧠
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 
 **Formula :**  
@@ -51,7 +52,7 @@ Characteristics.
 - Zero steady-state error 
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
-![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png) 
+![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PD.png) 
 
 
 
