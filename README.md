@@ -37,4 +37,29 @@ Characteristics.
 - Zero steady-state error 
 - Smoother oytput than p
 - Slow reaction due to the integral term.  
+![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png)
+
+
+## 3. PD Controller (Proportional+Derivative Control)
+the PD controllers prediccts future error by considering the **rate of charg** of the error.   
+
+**Formula :**  
+PD = (Kp*Error)+(Kd*(de(t)/dt)
+- Ki : integral gain (eliminates persistent offset)
+
+Characteristics.  
+- Zero steady-state error 
+- Smoother oytput than p
+- Slow reaction due to the integral term.  
 ![Function code](https://github.com/AlphaRoboticsTeam/Arduino-Control-Systems/blob/main/Diagrams/PI.png) 
+
+
+
+
+
+
+
+
+
+
+
