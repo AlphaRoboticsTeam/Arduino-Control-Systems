@@ -14,7 +14,7 @@
 | PID (Proportional + Integral + Derivative)* | 🌟 Combines all benefits: fast, accurate, stable<br>🎯 Eliminates steady-state error<br>⚙️ Excellent for most control systems | ⚠️ Harder to tune (3 parameters)<br>💻 Computationally more demanding<br>🧩 Over-tuning can cause instability |
 
 ## 1. P Controller (Proportional Control)
-###🧠
+###🧠Description
 the proportional controller produces an output that is directly proportional to the current error between the desired setpoint and sensor value process variable.  
 
 **Formula :**  
